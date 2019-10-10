@@ -5,3 +5,27 @@ spring:
         default-retries: 3
       ui:
         title: Monitor
+spring.boot.admin.
+eureka:
+  client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    healthcheck:
+      enabled: true
+    refresh:
+      enable: true
+    registry-fetch-interval-seconds: 30
+    service-url:
+      defaultZone: http://127.0.0.1:8088/eureka/
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

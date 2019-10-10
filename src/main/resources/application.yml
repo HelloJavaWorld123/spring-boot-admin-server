@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: admin-server
+info:
+  name: @name@
+  version: @project.version@
