@@ -1,0 +1,7 @@
+spring:
+  boot:
+    admin:
+      monitor:
+        default-retries: 3
+      ui:
+        title: Monitor
