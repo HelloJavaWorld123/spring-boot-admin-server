@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.rwx.admin</groupId>
     <artifactId>server</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>server</name>
     <description>Spring Boot Admin Server Project</description>
 
