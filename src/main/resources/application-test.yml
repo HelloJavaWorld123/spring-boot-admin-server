@@ -21,8 +21,9 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
     metadata-map:
-      username: admin
-      password: admin
+      user.name: admin
+      user.password: admin
+    prefer-ip-address: true
 management:
   endpoint:
     health:
