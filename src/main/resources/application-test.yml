@@ -24,14 +24,3 @@ eureka:
       user.name: admin
       user.password: admin
     prefer-ip-address: true
-management:
-  endpoint:
-    health:
-      enabled: true
-      show-details: always
-    shutdown:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: "*"

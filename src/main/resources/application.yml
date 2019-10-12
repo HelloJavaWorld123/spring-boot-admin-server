@@ -3,6 +3,28 @@ server:
 spring:
   application:
     name: admin-server
+  boot:
+    admin:
+      monitor:
+        default-retries: 3
 info:
   name: @name@
   version: @project.version@
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    shutdown:
+      enabled: true
+    logfile:
+      enabled: true
+      external-file: ${logging.path}/admin-server/admin_server_error.log
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    jmx:
+      exposure:
+        include: "*"
