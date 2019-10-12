@@ -16,7 +16,7 @@ eureka:
       enable: true
     registry-fetch-interval-seconds: 30
     service-url:
-      defaultZone: http://121.40.214.119:8088/eureka/
+      defaultZone: http://admin:admin@121.40.214.119:8088/eureka/
   instance:
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 90
